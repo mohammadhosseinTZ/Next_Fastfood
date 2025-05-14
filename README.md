@@ -7,7 +7,4 @@ Tools used in this project:
   <li>Parallel Routes and Intercepting</li>
   <li>Reducer and Context</li>
 </ul>
-![Uploading image.png…]()
-![Uploading image.png…]()
-![Uploading image.png…]()
-<img scr="![Uploading image.png…]()"/>
+
