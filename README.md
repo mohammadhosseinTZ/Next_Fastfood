@@ -1,4 +1,4 @@
-# This is a personal fast food project with NextJS and TyScript.
+# This is a personal fast food project with NextJS and TypeScript.
 Tools used in this project:
 <ul>
   <li>Next.js</li>
