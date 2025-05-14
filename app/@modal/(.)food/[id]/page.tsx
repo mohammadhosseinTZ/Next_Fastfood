@@ -1,7 +1,6 @@
 import Image from "next/image";
 import style from "./style.module.css"
 import { Add, Close, More } from "@/app/components";
-import Link from "next/link";
 
 type Props = {
   params: {
