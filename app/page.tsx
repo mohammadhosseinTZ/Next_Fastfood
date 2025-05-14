@@ -1,6 +1,6 @@
 import Image from "next/image"
 import style from "./style.module.css"
-import { BlueButton, Foods } from "./components"
+import {  Foods } from "./components"
 import Link from "next/link"
 function Home() {
   return (
