@@ -1,0 +1,42 @@
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80vw;
+    max-width: 400px;
+    background-color: #fff;
+    z-index: 99;
+    padding: 20px ;
+}
+.modal >img{
+    filter: invert(1);
+}
+.modal  .imgWrapper{
+    width: 100%;
+    position: relative;
+    aspect-ratio:2/2 ;
+}
+.modal  .imgWrapper img{
+    object-fit: cover;
+}
+.data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px 0px;
+}
+.data h5 {
+    font-size: 17px;
+    margin: 0px;
+}
+.data h5 a{
+    color: black;
+    text-decoration: none;
+}
+.desc{
+    -webkit-line-clamp: 5;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}

@@ -1,0 +1,38 @@
+.swiperContainer{
+    padding: 60px 0px 15px !important;
+}
+.imgWrapper{
+    width: 100%;
+    position: relative;
+    aspect-ratio: 2/2
+
+}
+.imgWrapper img{
+    object-fit: cover;
+}
+.title{
+
+    margin: 10px 0px;
+}
+.title a{
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--main-yellow);
+}
+.cart{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+.cart p{
+    margin: 0px;
+    color: #fff;
+}
+.cart a{
+    transition: .3s;
+    text-decoration: none;
+    color: #fff;
+}
+.cart a:hover{
+    color: var(--main-yellow);
+}

@@ -1,0 +1,110 @@
+
+.header{
+    background-color: #000;
+}
+.header >div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+.header ul{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 0px 0px;
+    gap: 30px;
+    list-style: none;
+    display: flex;
+    height: 100%;
+    margin: 0px;
+} 
+.header ul a{
+    font-size: 16px;
+    transition: .3s;
+    color: #000;
+    text-decoration: none;
+}
+.header ul a:hover{
+    font-weight: bold;
+}
+.login{
+    gap: 10px;
+    display: flex;
+}
+.menu{    
+    width: 30px;
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+.nav{
+    position: absolute;
+    left: -100%;
+    background-color: white;
+    z-index: 999;
+}
+.active{
+    width: 200px;
+    height: 120vh;
+    left: 0px;
+    top: 62px;
+}
+
+.menu:has(+.active) .closeIcon , .menu:has(+:not(.active)) .menuIcon{
+    display: block;
+}
+.menu:has(+.active) .menuIcon , .menu:has(+:not(.active)) .closeIcon{
+display: none;
+}
+.cart{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-yellow);
+    padding: 3px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.list{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+@media screen and (max-width:900px) {
+    body:has(.active)::after{
+        content: '';
+        background-color: #000000b5;
+        width: 100vw;
+        height: 120vh;
+        position: absolute;
+        top: 62px;
+        left: 0;
+    }
+    html:has(.active){
+        overflow: hidden;
+    }
+}
+@media screen and (min-width:900px) {
+    .header ul {
+        flex-direction: row;
+        padding-top: 0px;
+        justify-content: center;
+    }
+    .menu{
+        display: none;
+    }
+    .nav{
+        position: static;
+        background-color: transparent;
+    }
+    .header ul a{
+        color: #fff;
+    }
+    .active{
+        width: auto;
+        height: unset;
+    }
+}

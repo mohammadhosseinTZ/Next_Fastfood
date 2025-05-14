@@ -1,0 +1,46 @@
+.blueButton , .yellowButton{
+    color: #fff;
+    transition: all .3s;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 90px;
+    font-size: 15px;
+    padding: 7px;
+}
+.yellowButton{
+    background-color: var(--main-yellow);
+}
+.blueButton{
+    background-color: var(--main-blue);
+}
+.blueButton:hover , .yellowButton:hover{
+    background-color: #000;
+}
+.more{
+    background-color: var(--main-blue);
+}
+.add{
+    background-color: var(--main-yellow);
+}
+.add , .more{
+    transition: .3s;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 10px;
+}
+.add:hover , .more:hover{
+    background: black !important;
+}
+
+@media screen and (min-width:900px) {
+    .blueButton , .yellowButton{
+        padding: 10px;
+        width: 120px;
+        font-size: 20px;
+    }
+}
