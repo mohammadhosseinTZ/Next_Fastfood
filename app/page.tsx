@@ -13,7 +13,7 @@ function Home() {
             <Link href={"/food"}>MENU</Link>
           </div>
           <div className={style.imgWrapper}>
-            <Image src="/images/hero.jpg" alt="fast food" layout="responsive" width={800} height={600} />
+            <Image src="./images/hero.jpg" alt="fast food" layout="responsive" width={800} height={600} />
           </div>
         </div>
       </div>
